@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedimentos de Emergência - GuardianTech</title>
+    <link rel="stylesheet" href="padronizacao.css">
+</head>
+<body>
+
+    <header>
+        <h2>GuardianTech</h2>
+
+        <nav>
+            <a href="pagina_inicial.html">Início</a>
+            <a href="procedimento_emergencia.html">Procedimentos</a>
+            <a href="pagina_inicial.html#normas">NR</a>
+            <a href="pagina_inicial.html#treinamento">Treinamento</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Banner de título com .titulo -->
+        <div class="titulo">
+            <h1>PROCEDIMENTOS DE EMERGÊNCIA</h1>
+        </div>
+
+        <!-- Descrição / Orientação inicial -->
+        <section class="texto-entre-imagem">
+            <div>
+                <p id="banner-titulo">
+                    Selecione uma categoria abaixo para visualizar as orientações de segurança e os procedimentos adequados para cada tipo de ocorrência.
+                </p>
+            </div>
+        </section>
+
+        <!-- Botões das Categorias usando .setores-banner e .setores-bloco -->
+        <section class="setores-banner">
+            <div class="setores-bloco">
+                <a href="#" class="botao-setor ativo" id="btn-socorros" onclick="trocarCategoria('socorros'); return false;">Primeiros Socorros</a>
+                <a href="#" class="botao-setor" id="btn-incendio" onclick="trocarCategoria('incendio'); return false;">Incêndio</a>
+                <a href="#" class="botao-setor" id="btn-quimico" onclick="trocarCategoria('quimico'); return false;">Acidente Químico</a>
+                <a href="#" class="botao-setor" id="btn-queda" onclick="trocarCategoria('queda'); return false;">Queda de Altura</a>
+            </div>
+        </section>
+
+        <!-- O QUE SE DEVE FAZER -->
+        <div class="risco-vermelho">
+            <h2>O que SE DEVE fazer</h2>
+            <ul id="lista-fazer">
+                <!-- Preenchido via JavaScript (script.js) -->
+            </ul>
+        </div>
+
+        <!-- CONTATOS DE EMERGÊNCIA -->
+        <div class="risco-vermelho">
+            <h2>Contatos de Emergência</h2>
+            <ul>
+                <li><strong>SAMU:</strong> 192</li>
+                <li><strong>BOMBEIROS:</strong> 193</li>
+                <li><strong>POLÍCIA MILITAR:</strong> 190</li>
+                <li><strong>CEREST:</strong> (19) 3404-6200</li>
+                <li><strong>CETESB:</strong> 0800-0113560</li>
+                <li><strong>SESI SAÚDE:</strong> 0800-0551000</li>
+            </ul>
+        </div>
+
+        <!-- O QUE NÃO SE DEVE FAZER -->
+        <div class="risco-vermelho">
+            <h2>O que NÃO se deve fazer</h2>
+            <ul id="lista-nao-fazer">
+                <!-- Preenchido via JavaScript (script.js) -->
+            </ul>
+        </div>
+
+    </main>
+
+    <footer id="contato">
+        <p>&copy; GuardianTech - Todos os Direitos Reservados</p>
+        <p>Projeto Acadêmico - HTML &amp; CSS</p>
+    </footer>
+
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
